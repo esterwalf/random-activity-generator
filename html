@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Activity</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     </meta>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Special Event')">Special Event</button>
+            <button class="tablinks" onclick="openTab(event, 'I am Bored')">I'm Bored</button>
+            <button class="tablinks" onclick="openTab(event, 'giveMeAHobby')"> New Hobby</button>
+            <button class="tablinks" onclick="openTab(event, 'bucketList')"> Bucket List</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="Special Event" class="tabcontent">
+            <h1>Book</h1>
+            <h2 id="eventTitle"></h2>
+            <p id="eventList">
+            </p>
+            <button onclick="randomSpecialEvent(event)">Shuffle</button>
+          </div>
+          
+          <div id="I am Bored" class="tabcontent">
+            <h1>Go</h1>
+            <h2 id="boredTitle"></h2>
+            <p  id="boredList"></p>
+            <button onclick="randomIAmBored(event)">Randomiser</button>
+          </div>
+
+          <div id="giveMeAHobby" class="tabcontent">
+            <h1>Try:</h1>
+            <h2 id="hobbyTitle"></h2>
+            <p id="hobbyList"></p>
+            <button onclick="randomHobby(event)">Random</button>
+          </div>
+
+          <div id="bucketList" class="tabcontent">
+            <h1>Bucket List</h1>
+            <ul>
+              <li>
+                Scuba Diving
+              </li>
+              <li>
+                Zip Line
+              </li>
+              <li>
+                Sky Dining
+              </li>
+              <li>
+                Underwater restaurant
+              </li>
+              <li>
+                Indoor skydiving
+              </li>
+              <li>
+                Spend a night in a castle
+              </li>
+              <li>
+                Missionary trip
+              </li>
+              <li>
+                Fly a plane/helicopter
+              </li>
+              <li>
+                Visit Disneyland/Disneysea
+              </li>
+              <li>
+                Sea the Northern lights
+              </li>
+              <li>
+                Spend a night in an ice hotel
+              </li>
+              <li>
+                Swim with Dolphins
+              </li>
+              <li>
+                Complete the real life Crystal Maze
+              </li>
+              <li>
+                Travel first-class
+              </li>
+              <li>
+                Snorkling
+              </li>
+              <li>
+                Write and publish a book
+              </li>
+            </ul>
+            
+          </div>
+          
+        <script src="./javascript.js"></script>
+    </body>
+</html>
